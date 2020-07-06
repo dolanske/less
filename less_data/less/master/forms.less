@@ -1,0 +1,62 @@
+/*
+    Should be used only for 1 line, every new input line should .
+
+    Use this only if you need to stack more inputs on one line
+*/
+.input-wrapper {
+    .clearfix();
+    display: block;
+
+    &.double {
+        .input-container {
+            width: 48%;
+
+            &:first-of-type {
+                float: left;
+            }
+
+            &:last-of-type {
+                float: right;
+            }
+        }
+    }
+
+    &.tripple {
+        .input-container {
+            width: 32%;
+            margin-right: 2%;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+/*
+    Wrap every input element in
+*/
+.input-container {
+    display: block;
+    margin-bottom: 20px;
+
+    button,
+    input,
+    textarea {
+        display: block;
+        width: 100%;
+    }
+}
+
+textarea {
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    min-height: 200px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
